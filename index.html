@@ -11,13 +11,15 @@
     <link rel="manifest" href="manifest.webmanifest">
     <!--Подключаю стили-->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Шрифт Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+
+  
     <title>Nerds</title>
 </head>
 
@@ -38,21 +40,21 @@
         </div>
         <div class="container">
             <div class="container_header slider">
-                <div class="slide slide_active">
+                <div class="slide_first slide_active">
                     <p class="main_caption"><strong>Долго, дорого,<br>
                             скрупулезно</strong></p>
                     <p class="main_caption_small"> Математически выверенный дизайн <br>
                         для вашего сайта или мобильного приложения</p>
                     <a class="button button_more" href="#">узнать больше</a>
                 </div>
-                <div class="slide">
+                <div class="slide_second">
                     <p class="main_caption"><strong>Любим математику<br>
                             как никто другой</strong></p>
                     <p class="main_caption_small"> Никакого креатива, только математические формулы <br>
                         для расчета идеальных пропорций</p>
                     <a class="button button_more" href="#">узнать больше</a>
                 </div>
-                <div class="slide">
+                <div class="slide_thrid">
                     <p class="main_caption"><strong>Только ночь,<br>
                             только хардкор</strong></p>
                     <p class="main_caption_small"> Работать днем,как все? Мы против этого. <br>
@@ -60,9 +62,9 @@
                     <a class="button button_more" href="#">узнать больше</a>
                 </div>
                 <div class="slider_controls">
-                    <button class="slider_button_active" type="button" aria-label="Первый слайд"></button>
-                    <button type="button" aria-label="Второй слайд"></button>
-                    <button type="button" aria-label="Третий слайд"></button>
+                    <button class="slider_button_active button_first" type="button" aria-label="Первый слайд"></button>
+                    <button class = "button_second" type=" button" aria-label="Второй слайд"></button>
+                    <button class = "button_thrid" type=" button" aria-label="Третий слайд"></button>
                 </div>
             </div>
 
@@ -145,7 +147,7 @@
                         alt="логотип mishka"><span class="visually_hidden">Логотип мишка</span></a>
             </section>
             <div class="modal_window">
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <form сlass ="modal_form" action="https://echo.htmlacademy.ru" method="post">
                     <fieldset>
                         <button class="button_close" type="button" aria-label="Закрыть окно"></button>
                         <p class="modal_caption">Напишите нам</p>
@@ -172,26 +174,27 @@
         </div>
         <section class="mapp">
             <h2 class="visually_hidden">Карта и контакты</h2>
-            <div class="map_container">
-                <img class="map" src="img/Контакты.png" width="1440" height="416"
-                    alt="Карта с адресом : наб. Реки Карповки, 5 лит П, Санкт-Петербург +7 800 555-86-28">
+                <iframe class = "iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3993.6360510471914!2d30.317381000000005!3d59.96834200000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc4e8ce61%3A0x74d4f0cbfe1fd995!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTk3MDIy!5e0!3m2!1sru!2sru!4v1670058780200!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <img class="marker" src="img/map_marker.png" width="231" height="190" alt="">
-                <div class="contacts">
-                    <div class="contacts_2">
-                        <p class="mapp_capture">nЁrds design studio</p>
-                        <p class="mapp_capture_small">наб. Реки Карповки,<br>
-                            5 лит П, Санкт-Петербург
-                        </p>
-                        <a class="mapp_telephone" href="tel:+78005558628">+7 800 555 86-28</a><br>
-                        <button type="button" class="button button_map"
-                            aria-label="нажмите, что бы написать нам">Напишите нам</button>
-                    </div>
-                </div>
-            </div>
-
-
+                
+            
         </section>
+        <div class="contacts">
+            <div class="contacts_2">
+                <p class="mapp_capture">nЁrds design studio</p>
+                <p class="mapp_capture_small">наб. Реки Карповки,<br>
+                    5 лит П, Санкт-Петербург
+                </p>
+                <a class="mapp_telephone" href="tel:+78005558628">+7 800 555 86-28</a><br>
+                <button type="button" class="button button_login"
+                    aria-label="нажмите, что бы написать нам">Напишите нам</button>
+            </div>
+        </div>
     </main>
+<!--Подключаю JS -->
+    <script src="js/login.js"> </script>
+    <script src="js/map.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 <div class="container">
     <footer class="main_footer">
