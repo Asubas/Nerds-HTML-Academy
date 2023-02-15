@@ -461,15 +461,16 @@ h3 {
 /*Стилизация карты и модального окошка на карте*/
 .contacts {
   background-color: var(--basic-white);
-  position: absolute;
-  left: 560px;
-  bottom: 60px;
+  position: relative;
+  left: 0px;
+  bottom: -380px;
   width: 319px;
   height: 308px;
+  z-index: 1;
 }
 
 .contacts_2 {
-  margin-top: 50px;
+  padding-top: 2px;
   margin-left: 60px;
   margin-right: 39px;
   margin-bottom: 49px;
@@ -1316,7 +1317,7 @@ border_specials {
   height: 180px;
   align-items: center;
   border-bottom: 2px solid var(--basic-grey);
-  margin-bottom: 80px;
+  margin-bottom: -230px;
   background-image: url(../img/line_gray.png), url(../img/line_gray.png), url(../img/line_gray.png);
   background-position: 281px 63px, 581px 63px, 880px 65px;
   background-repeat: no-repeat;
@@ -1408,7 +1409,7 @@ border_specials {
 
 .list_nav {
   list-style: none;
-  margin-bottom: 60px;
+  margin-bottom: -230px;
   margin-top: 25px;
   width: 760px;
   margin-left: 400px;
